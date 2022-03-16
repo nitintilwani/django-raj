@@ -2,7 +2,7 @@ version: "3"
 services:
   nginx: 
 #     image: rajneeshmehta93/nginx-todo:github-NO-SSL
-    image: nitintilwani/task1-status-check
+    image: nitintilwani/task1-nginix
     restart: always
     ports:
         - 37831:80
@@ -14,7 +14,7 @@ services:
     depends_on: 
         - backend
   backend:
-    image: nitintilwani/task1-nginix
+    image: nitintilwani/task1-status-check
     restart: always
     expose:
       - 8000
